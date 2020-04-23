@@ -25,7 +25,9 @@
         </style>
     </head>
     <body>
+        
         <img src="logo.png" alt="Imagem do logo">
+        
         <p>
             Ficar em casa em períodos longos, não deve ser nada fácil.
         </p>
@@ -38,8 +40,22 @@
             Comece clicando em ver ideias para ver as
             ideias cadastradas e contribua adicionando a sua ideia.
         </p>
+        
         <button>+ Adicionar ideia</button>
+        
         <button class="fat">Ver Ideias</button>
+        
         <p id="footer">By Nardo🤟😜</p>
+
+        <script>
+            document
+                .querySelector("button.fat")
+                .addEventListener("click", function(){
+                    document
+                        .querySelector("#footer")
+                        .classList
+                        .toggle("hide")
+                })
+        </script>
     </body>
 </html>
