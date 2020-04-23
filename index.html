@@ -3,18 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <title>Casa Criativa</title>
+        <style>
+            body {
+                background: #e5e5e5;
+                color: #25282b;
+                text-align: center;
+            }
+
+            button {
+                background: none;
+                color: #ff5e84;
+                border: none;
+                font-weight: bold;
+            }
+
+            .fat {
+                color: white;
+                background: #ff5e84;
+            }
+
+        </style>
     </head>
     <body>
+        
         <img src="logo.png" alt="Imagem do logo">
+        
         <p>
             Ficar em casa em períodos longos, não deve ser nada fácil.
-
-            Por isso iremos catalogar ideias, brincadeiras, jogos, filmes,
-            livros, cursos, dicas e tudo que for necessário para tornar
+        </p>
+        <p>
+            Por isso iremos catalogar <strong>ideias, brincadeiras, jogos, filmes,
+            livros, cursos, dicas</strong> e tudo que for necessário para tornar
             esse momento mais interessante.
-
+        </p>
+        <p>
             Comece clicando em ver ideias para ver as
             ideias cadastradas e contribua adicionando a sua ideia.
         </p>
+        
+        <button>+ Adicionar ideia</button>
+        
+        <button class="fat">Ver Ideias</button>
+        
+        <p id="footer">By Nardo🤟😜</p>
+
+        <script>
+            document
+                .querySelector("button.fat")
+                .addEventListener("click", function(){
+                    document
+                        .querySelector("#footer")
+                        .classList
+                        .toggle("hide")
+                })
+        </script>
     </body>
 </html>
