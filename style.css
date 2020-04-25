@@ -8,6 +8,12 @@ body {
     display: none;
 }
 
+a {
+    color: #ff5e84;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 #container {
     width: 90%;
     max-width: 980px;
