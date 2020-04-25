@@ -1,7 +1,27 @@
 body {
     background: #e5e5e5;
     color: #25282b;
-    text-align: center;
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+#container {
+    width: 90%;
+    max-width: 980px;
+    margin: 40px auto;
+    display: flex;
+}
+
+#intro {
+    width: 300px;
+    margin-right: 20px;
+}
+
+main {
+    margin: 32px 0;
 }
 
 button {
@@ -9,13 +29,33 @@ button {
     color: #ff5e84;
     border: none;
     font-weight: bold;
+    cursor: pointer;
+    outline: none;
 }
 
-.fat {
-    color: white;
+button:hover {
+    text-decoration: underline;
+}
+
+button.fat {
     background: #ff5e84;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.19);
 }
 
-.hide {
-    display: none;
+button.fat:hover {
+    text-decoration: none;
+}
+
+#buttons {
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-evenly;
+}
+
+#buttons, footer {
+    text-align: center;
 }
