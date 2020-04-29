@@ -2,6 +2,7 @@ body {
     background: #e5e5e5;
     color: #25282b;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hide {
@@ -12,6 +13,12 @@ a {
     color: #ff5e84;
     font-weight: bold;
     text-decoration: none;
+}
+
+p, .description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
 }
 
 #container {
@@ -34,7 +41,10 @@ button {
     background: none;
     color: #ff5e84;
     border: none;
+    font-size: 14px;
     font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
     cursor: pointer;
     outline: none;
 }
@@ -54,6 +64,15 @@ button.fat {
 
 button.fat:hover {
     text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #777;
 }
 
 #buttons {
