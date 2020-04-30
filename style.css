@@ -139,16 +139,25 @@ footer {
     width: 80%;
     max-width: 800px;
     margin: 0 auto;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
 }
 
-.input-wrapper {
-    margin: 12px 0;
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5) {
+    grid-column: span 2;
 }
+
 
 form input,
 form textarea {
     width: 100%;
     padding: 6px;
+    box-sizing: border-box;
     border-radius: 6px;
     border: 1px solid rgba(141, 25, 52, 0.5);
     outline: none;
