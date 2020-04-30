@@ -112,3 +112,31 @@ footer {
 .idea .description {
     margin: 16px 0;
 }
+
+/* Modal */
+
+#modal {
+    background: #ff5e84;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#modal .content {
+    margin-top: 128px;
+    color: white;
+}
+
+#modal .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
