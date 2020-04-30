@@ -126,7 +126,7 @@ footer {
 }
 
 #modal .content {
-    margin-top: 128px;
+    margin-top: 28px;
     color: white;
 }
 
@@ -139,4 +139,39 @@ footer {
     width: 80%;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.input-wrapper {
+    margin: 12px 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+    outline: none;
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form button {
+    margin-top: 12px;
+    background: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #349dee;
+    color: white;
+    text-decoration: none;
 }
