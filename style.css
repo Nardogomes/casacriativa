@@ -228,3 +228,40 @@ form button:hover {
     display: flex;
     justify-content: space-between;
 }
+
+#page-ideas nav {
+    display: flex;
+    align-items: center;
+}
+
+#page-ideas nav li {
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+#page-ideas nav li a {
+    color: #25282b;
+}
+
+#page-ideas nav li:last-child {
+    margin: 0;
+    width: 120px;
+    height: 40px;
+    background-color: #ff5e84;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+}
+
+#page-ideas nav li:last-child:hover {
+    background-color: #349dee;
+}
+
+#page-ideas nav li:last-child a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
