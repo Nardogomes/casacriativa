@@ -218,3 +218,13 @@ form button:hover {
     opacity: 0;
     visibility: hidden;
 }
+
+/*IDEIAS.html*/
+#page-ideas #container{
+    display: block;
+}
+
+#page-ideas header {
+    display: flex;
+    justify-content: space-between;
+}
