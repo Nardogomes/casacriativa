@@ -1,3 +1,4 @@
+/* Global */
 body {
     background: #e5e5e5;
     color: #25282b;
@@ -15,6 +16,20 @@ a {
     text-decoration: none;
 }
 
+.button {
+    background: #ff5e84;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.19);
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+/* Padrão */
 p, .description {
     font-size: 16px;
     line-height: 24px;
@@ -51,19 +66,6 @@ button {
 
 button:hover {
     text-decoration: underline;
-}
-
-button.fat {
-    background: #ff5e84;
-    color: white;
-    width: 150px;
-    height: 40px;
-    border-radius: 6px;
-    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.19);
-}
-
-button.fat:hover {
-    text-decoration: none;
 }
 
 footer {
@@ -132,7 +134,7 @@ modal.addScroll {
 }
 
 #modal .content {
-    margin-top: 15%;
+    margin-top: 4%;
     color: white;
 }
 
@@ -254,8 +256,14 @@ form button:hover {
 
 #page-ideas nav li:last-child {
     margin: 0;
+}
+
+#page-ideas nav li:last-child a {
+    font-size: 14px;
+    font-weight: bold;
     width: 120px;
     height: 40px;
+    color: white;
     background-color: #ff5e84;
 
     display: flex;
@@ -265,14 +273,9 @@ form button:hover {
     border-radius: 6px;
 }
 
-#page-ideas nav li:last-child:hover {
+#page-ideas nav li:last-child a:hover {
     background-color: #349dee;
-}
-
-#page-ideas nav li:last-child a {
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
+    text-decoration: none;
 }
 
 section#title {
