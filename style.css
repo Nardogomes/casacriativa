@@ -1,8 +1,13 @@
+/* Global */
 body {
     background: #e5e5e5;
     color: #25282b;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+body.hideScroll {
+    overflow: hidden;
 }
 
 a {
@@ -11,6 +16,20 @@ a {
     text-decoration: none;
 }
 
+.button {
+    background: #ff5e84;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.19);
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+/* Padrão */
 p, .description {
     font-size: 16px;
     line-height: 24px;
@@ -47,19 +66,6 @@ button {
 
 button:hover {
     text-decoration: underline;
-}
-
-button.fat {
-    background: #ff5e84;
-    color: white;
-    width: 150px;
-    height: 40px;
-    border-radius: 6px;
-    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.19);
-}
-
-button.fat:hover {
-    text-decoration: none;
 }
 
 footer {
@@ -115,15 +121,20 @@ footer {
     background: #ff5e84;
     position: absolute;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     transition: 400ms;
 }
 
+modal.addScroll {
+    overflow: auto;
+}
+
 #modal .content {
-    margin-top: 28px;
+    margin-top: 4%;
     color: white;
 }
 
@@ -135,7 +146,7 @@ footer {
 #modal form {
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 15%;
    
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -245,8 +256,14 @@ form button:hover {
 
 #page-ideas nav li:last-child {
     margin: 0;
+}
+
+#page-ideas nav li:last-child a {
+    font-size: 14px;
+    font-weight: bold;
     width: 120px;
     height: 40px;
+    color: white;
     background-color: #ff5e84;
 
     display: flex;
@@ -256,12 +273,37 @@ form button:hover {
     border-radius: 6px;
 }
 
-#page-ideas nav li:last-child:hover {
+#page-ideas nav li:last-child a:hover {
     background-color: #349dee;
+    text-decoration: none;
 }
 
-#page-ideas nav li:last-child a {
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
+section#title {
+    text-align: center;
+}
+
+section#title p {
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+section#ideas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section#ideas .idea {
+    margin: 0;
+}
+
+section#title,
+section#ideas,
+footer {
+    margin-top: 56px;
 }
