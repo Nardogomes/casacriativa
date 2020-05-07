@@ -127,7 +127,7 @@ footer {
 
 #modal {
     background: #ff5e84;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -142,7 +142,7 @@ footer {
 }
 
 #modal .content {
-    margin-top: 4%;
+    margin-top: 3%;
     color: white;
 }
 
@@ -154,7 +154,7 @@ footer {
 #modal form {
     width: 80%;
     max-width: 800px;
-    margin: 0 auto 15%;
+    margin: 0 auto 8%;
    
     display: grid;
     grid-template-columns: 1fr 1fr;
