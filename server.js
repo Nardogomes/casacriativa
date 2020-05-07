@@ -7,7 +7,7 @@ const server = express()
 *Capturando pedido do client para responder
 */
 server.get("/", function(req, res) {
-    return res.send("Resposta do servidor")
+    return res.sendFile(__dirname + "/index.html")
 })
 
 //Ligando servidor na porta 3000
