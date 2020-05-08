@@ -42,56 +42,23 @@
 
             <section id="last-ideas">
                 
-                <div class="idea">
-                    <img
-                        src="https://image.flaticon.com/icons/svg/2729/2729007.svg"
-                        alt="Imagem de curso de programação">
-                    <div class="content">
-                        <h3>Curso de Programação</h3>
-                        <p>Estudo</p>
-                        <div class="description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Neque earum corrupti molestiae distinctio, debitis deleniti nemo aut
-                            unde, nesciunt sequi ut maiores iusto aliquam voluptatibus necessitatibus
-                            perferendis quia quis aspernatur.
+                {%for idea in ideas %}
+                    
+                    <div class="idea">
+                        <img
+                            src="{{idea.img}}"
+                            alt="Imagem de {{idea.title}}">
+                        <div class="content">
+                            <h3>{{idea.title}}</h3>
+                            <p>{{idea.category}}</p>
+                            <div class="description">
+                                {{idea.description}}
+                            </div>
+                            <a href="#">Ir para a ideia</a>
                         </div>
-                        <a href="#">Ir para a ideia</a>
                     </div>
-                </div>
-
-                <div class="idea">
-                    <img
-                        src="https://image.flaticon.com/icons/svg/2729/2729005.svg"
-                        alt="Imagem do curso de exercício">
-                    <div class="content">
-                        <h3>Exercícios</h3>
-                        <p>Saúde</p>
-                        <div class="description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Neque earum corrupti molestiae distinctio, debitis deleniti nemo aut
-                            unde, nesciunt sequi ut maiores iusto aliquam voluptatibus necessitatibus
-                            perferendis quia quis aspernatur.
-                        </div>
-                        <a href="#">Ir para a ideia</a>
-                    </div>
-                </div>
-
-                <div class="idea">
-                    <img
-                        src="https://image.flaticon.com/icons/svg/2729/2729027.svg"
-                        alt="Imagem do curso de meditação">
-                    <div class="content">
-                        <h3>Curso de Meditação</h3>
-                        <p>Saúde da mente</p>
-                        <div class="description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Neque earum corrupti molestiae distinctio, debitis deleniti nemo aut
-                            unde, nesciunt sequi ut maiores iusto aliquam voluptatibus necessitatibus
-                            perferendis quia quis aspernatur.
-                        </div>
-                        <a href="#">Ir para a ideia</a>
-                    </div>
-                </div>
+                
+                {%endfor%}
 
             </section>
 
