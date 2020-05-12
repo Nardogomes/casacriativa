@@ -2,10 +2,14 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-        <title>Casa Criativa</title>
+        
+        {% block title %}
+            <title>Casa Criativa</title>
+        {% endblock title %}
+
         {% include "head.html" %}
     </head>
-    <body>
+    <body id={{bodyId}}>
 
         <div id="container">
             
