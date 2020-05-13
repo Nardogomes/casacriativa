@@ -52,3 +52,4 @@ db.serialize(function() {
     })*/
 })
 
+module.exports = db
