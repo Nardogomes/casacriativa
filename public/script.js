@@ -14,3 +14,14 @@ function onOff(){
         .classList
         .toggle("addScroll")
 }
+
+function checkFieds(event) {
+
+    const valuesToCheck = [
+        "title",
+        "image",
+        "category",
+        "description",
+        "link",
+    ]
+}
