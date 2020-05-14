@@ -13,9 +13,9 @@ db.serialize(function() {
             link TEXT
         );
     `)
-    /*
+    
     // Inserir dados na tabela
-    const query = `
+    /*const query = `
         INSERT INTO ideas(
             image,
             title,
