@@ -13,6 +13,7 @@ db.serialize(function() {
             link TEXT
         );
     `)
+    /*
     // Inserir dados na tabela
     const query = `
         INSERT INTO ideas(
@@ -31,7 +32,7 @@ db.serialize(function() {
         "#"
     ]
     
-    /*db.run(query, values, function(err) {
+    db.run(query, values, function(err) {
         if(err) return console.log(err)
 
         console.log(this)
